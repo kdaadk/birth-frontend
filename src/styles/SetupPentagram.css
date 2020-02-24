@@ -1,0 +1,57 @@
+.setupPentagram {
+  width: 130px;
+  height: 140px;
+  float: left;
+  margin-right: 50px;
+}
+
+.setupPentagram .svg {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.setupPentagram .energies {
+  position: relative;
+}
+
+.setupPentagram .energies .heat {
+  position: absolute;
+  bottom: 59px;
+  left: 56px;
+}
+
+.setupPentagram .energies .humidity-inner {
+  position: absolute;
+  bottom: 40px;
+  left: 81px;
+}
+
+.setupPentagram .energies .humidity-outer {
+  position: absolute;
+  bottom: 40px;
+  left: 108px;
+}
+
+.setupPentagram .energies .dryness {
+  position: absolute;
+  bottom: -20px;
+  left: 74px;
+}
+
+.setupPentagram .energies .cold {
+  position: absolute;
+  bottom: -20px;
+  left: 37px;
+}
+
+.setupPentagram .energies .wind-inner {
+  position: absolute;
+  bottom: 40px;
+  left: 30px;
+}
+
+.setupPentagram .energies .wind-outer {
+  position: absolute;
+  bottom: 40px;
+  left: 4px;
+}

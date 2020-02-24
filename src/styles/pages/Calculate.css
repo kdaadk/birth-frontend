@@ -1,0 +1,64 @@
+.mobile-light-calculate .date-block {
+    display: flex;
+}
+
+.mobile-light-calculate .header {
+    text-align: center;
+    margin-bottom: 10px;    
+}
+
+.mobile-light-calculate .inner-energy-cycle-table {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.mobile-light-calculate .inner-energy-cycle-table td{
+    width: 80px;
+}
+
+.mobile-light-calculate .bazi-birth-date {
+    text-align: center;
+    flex-flow: column;
+}
+
+.mobile-light-calculate .setupPentagram-light-mode {
+    margin: auto;
+    width: 50%;
+}
+
+.mobile-light-calculate .text-result {
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;    
+}
+
+.mobile-light-calculate .table-header {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.mobile-light-calculate table{
+    justify-content: center;
+    display: flex;    
+}
+
+.mobile-light-calculate table td{
+    justify-content: center;
+    border: solid black 1px;
+    border-spacing: 1px;
+}
+
+.mobile-light-calculate .energy-header {
+    font-weight: bold;
+    text-align: center;
+}
+
+.mobile-light-calculate .description-block {
+    font-size: 12px;
+}
+
+.mobile-light-calculate .reference {
+    font-size: 12px;
+    margin: 10px 0 10px 0;
+}

@@ -1,0 +1,72 @@
+.desktop-light-mode .date-block {
+    display: flex;
+    justify-content: center;
+}
+
+.desktop-light-mode .date-block .birth {
+    margin-right: 140px;
+}
+
+.desktop-light-mode .date-block .birth .header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.desktop-light-mode .date-block .event .date-picker {
+    text-align: center;
+}
+
+.desktop-light-mode .date-block .event .date-picker .header {
+    margin-bottom: 10px;
+}
+
+.desktop-light-mode .body {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.desktop-light-mode .text-result {
+    width: 400px;
+    font-size: 14px;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+
+.desktop-light-mode .result {
+    display: flex;
+    justify-content: center;
+}
+
+.desktop-light-mode .result .first-block {
+    margin-top: 32px;
+}
+
+.desktop-light-mode .cycles-table{
+    font-size: 14px;
+}
+
+.desktop-light-mode .cycles-table .message {
+    margin-top: 33px;
+    margin-bottom: 20px;
+}
+
+.desktop-light-mode .cycles-table td.header{
+    column-span: 2;
+    background-color: #D3EDF6;
+    alignment: center;
+}
+
+.desktop-light-mode .cycles-table .content td{
+    width: 100px;
+    alignment: center;
+}
+
+.desktop-light-mode .description-content {
+    margin: auto;
+    width: 50%;
+}
+
+.desktop-light-mode .energy-header {
+    text-align: center;
+}

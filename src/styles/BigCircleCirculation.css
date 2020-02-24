@@ -1,0 +1,53 @@
+.big-circle-circulation {
+  width: 100px;
+  height: 300px;
+  float: left;
+  clear: both;
+}
+
+.big-circle-circulation .big-arrow {
+  position: absolute;
+}
+
+.big-circle-circulation .big-arrow.first {
+  margin-top: 5px;
+}
+
+.big-circle-circulation .big-arrow.second {
+  margin-top: 100px;
+}
+
+.big-circle-circulation .big-arrow.third {
+  margin-top: 195px;
+}
+
+.big-circle-circulation .small-arrow {
+  position: absolute;
+  margin-left: 41px;
+}
+
+.big-circle-circulation .small-arrow.first {
+  margin-top: 28px;
+}
+
+.big-circle-circulation .small-arrow.second {
+  margin-top: 123px;
+}
+
+.big-circle-circulation .small-arrow.third {
+  margin-top: 218px;
+}
+
+.big-circle-circulation .abbr {
+  float: left;
+  margin-right: 50px;
+  margin-left: 25px;
+}
+
+.big-circle-circulation .abbr .weak {
+  border: 1px solid black;
+}
+
+.big-circle-circulation .abbr p {
+  height: 24px;
+}

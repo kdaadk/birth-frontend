@@ -1,0 +1,45 @@
+.expert-mode .date-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.expert-mode .date-block .birth {
+    float: left;
+}
+
+.expert-mode .date-block .birth .header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.expert-mode .date-block .event {
+    float: left;
+}
+
+.expert-mode .date-block .event .date-picker {
+    text-align: center;
+}
+
+.expert-mode .date-block .event .date-picker .header {
+    margin-bottom: 10px;
+}
+
+.expert-mode .date-block .reception {
+    text-align: center;
+}
+
+.expert-mode .date-block .reception .header {
+    margin-bottom: 10px;
+}
+
+.expert-mode .body .main-block{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .expert-mode .body .main-block {
+        justify-content: normal;
+    }
+}

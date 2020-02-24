@@ -1,0 +1,14 @@
+.mode-pick {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mode-pick .header {
+  text-align: center;
+}
+
+.mode-pick .buttons {
+  text-align: center;
+}

@@ -1,0 +1,16 @@
+.mobile-light-mode {
+    width: 140px;
+    margin: auto;
+}
+
+.mobile-light-mode .calculate-btn {
+    margin-top: 20px;
+}
+
+.mobile-light-mode .hour-dropdown {
+    margin-bottom: 20px;
+}
+
+.mobile-light-mode .date-header {
+    text-align: center;
+}

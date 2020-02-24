@@ -1,0 +1,56 @@
+.cycles {
+  display: inline-block;
+}
+
+.cycles .cycle-row {
+  display: flex;
+  margin-left: -15px;
+}
+
+.cycles .column-header {
+  padding-left: 45px;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.cycles .column-header .name {
+  width: 98px;
+  text-align: center;
+}
+
+.cycles .cycle-row .header {
+  width: 45px;
+}
+
+.cycles .cycle-row .header.empty {
+  margin-right: 40px;
+}
+
+.cycles .cycle-element.empty {
+  margin-right: 54px;
+}
+
+.cycles .cycle-element {
+  margin-right: 10px;
+  width: 88px;
+}
+
+.cycles .cycle-element.last{
+  width: 131px;
+  margin-right: 30px;
+}
+
+.cycles .cycle-element.empty{
+  margin-right: 10px;
+  width: 88px;
+}
+
+.cycles .cycle-element .start-date {
+  float: left;
+  margin-right: 5px;
+}
+
+.cycles .cycle-element .end-date {
+  float: right;
+  margin-left: 5px;
+}

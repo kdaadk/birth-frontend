@@ -1,0 +1,73 @@
+.setupPentagram-light-mode {
+    height: 160px;
+    margin-right: 50px;
+}
+
+.setupPentagram-light-mode .svg {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.setupPentagram-light-mode .energies {
+    position: relative;
+    font-size: 25px;
+}
+
+.setupPentagram-light-mode .energies .heat-inner {
+    position: absolute;
+    bottom: 81px;
+    left: 74px;
+}
+
+.setupPentagram-light-mode .energies .heat-outer {
+    position: absolute;
+    bottom: 117px;
+    left: 71px;
+}
+
+.setupPentagram-light-mode .energies .humidity-inner {
+    position: absolute;
+    bottom: 57px;
+    left: 108px;
+}
+
+.setupPentagram-light-mode .energies .humidity-outer {
+    position: absolute;
+    bottom: 66px;
+    left: 150px;
+}
+
+.setupPentagram-light-mode .energies .dryness-inner {
+    position: absolute;
+    bottom: 14px;
+    left: 94px;
+}
+
+.setupPentagram-light-mode .energies .dryness-outer {
+    position: absolute;
+    bottom: -25px;
+    left: 124px;
+}
+
+.setupPentagram-light-mode .energies .cold-inner {
+    position: absolute;
+    bottom: 14px;
+    left: 49px;
+}
+
+.setupPentagram-light-mode .energies .cold-outer {
+    position: absolute;
+    bottom: -25px;
+    left: 28px;
+}
+
+.setupPentagram-light-mode .energies .wind-inner {
+    position: absolute;
+    bottom: 57px;
+    left: 39px;
+}
+
+.setupPentagram-light-mode .energies .wind-outer {
+    position: absolute;
+    bottom: 66px;
+}

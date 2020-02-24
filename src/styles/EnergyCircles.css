@@ -1,0 +1,79 @@
+.energy-circles {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  .energy-circles {
+    justify-content: end;
+    width: 50%;
+    margin: auto;
+  }
+}
+
+.energy-circles .circle {
+  margin-right: 10px;
+}
+
+.circle .top {
+  display: flex;
+}
+
+.circle .bottom {
+  display: flex;
+}
+
+.down-cursor {
+  height: 30px;
+}
+
+.down-cursor .arrow {
+  transform: rotate(180deg);
+  fill: red;
+  height: 30px;
+}
+
+.arrow-up-cursor {
+  fill: red;
+}
+
+.empty-space {
+  margin-left: 90px;
+  display: inline;
+}
+
+.vertical-text {
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  float: left;
+  letter-spacing: -7px;
+  font-size: 12px;
+}
+
+.vertical-text.first {
+  margin-right: 50px;
+  margin-top: 10px;
+}
+
+.center {
+  width: 120px;
+  height: 80px;
+}
+
+svg.arrow-up {
+  margin-top: 10px;
+}
+
+svg.arrow-left {
+  margin: 0 10px 0 10px;
+}
+
+svg.arrow-down {
+  transform: rotate(180deg);
+  margin-top: 10px;
+  float: left;
+}
+svg.arrow-right {
+  transform: rotate(180deg);
+  margin: 0 10px 0 10px;
+}

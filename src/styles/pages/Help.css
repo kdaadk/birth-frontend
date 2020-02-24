@@ -1,0 +1,11 @@
+.paragraph-indent {
+    text-indent: 50px;
+}
+
+.block-indent {
+    margin: 10px 0 20px 0;
+}
+
+.block-indent-bottom {
+    margin-bottom: 20px;
+}

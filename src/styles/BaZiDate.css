@@ -1,0 +1,12 @@
+﻿.bazi-birth-date {
+  display: flex;
+  height: 120px;
+}
+
+.bazi-birth-date .column {
+  min-width: 75px;
+}
+
+p {
+  margin-bottom: 0;
+}

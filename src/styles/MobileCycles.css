@@ -1,0 +1,40 @@
+.mob-cycles {
+    display: inline-block;
+}
+
+.mob-cycles .row {
+    display: flex;
+}
+
+.mob-cycles .column-header {
+    padding-left: 10px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.mob-cycles .column-header .name {
+    width: 59px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.mob-cycles .row .header {
+    width: 30px;
+    font-size: 12px;
+    padding-top: 5px;
+}
+
+.mob-cycles .cycle-element {
+    margin-right: 2px;
+    font-size: 10px;
+}
+
+.mob-cycles .cycle-element .start-date {
+    float: left;
+    margin-right: 3px;
+}
+
+.mob-cycles .cycle-element .end-date {
+    float: right;
+    margin-left: 5px;
+}
