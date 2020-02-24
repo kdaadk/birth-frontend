@@ -3,6 +3,7 @@ import {BaZiDate} from "../components/BaZiDate";
 import "../styles/pages/Calculate.css";
 import {SetupPentagramLightMode} from "../components/LightMode/SetupPentagramLightMode";
 import {MobileCycles} from "../components/MobileCycles";
+import {post} from "../shared/api";
 
 export class Calculate extends Component {
     static displayName = Calculate.name;
@@ -119,14 +120,7 @@ export class Calculate extends Component {
             birthHour: birthHour,
             eventDate: ed
         };
-        const url = `${process.env.REACT_APP_API_URL}/calculator`;
-        fetch(url, {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(input)
-        })
+        post("/calculator", input)
             .then(response => response.json())
             .then(data => this.setState({ model: data }));
     }

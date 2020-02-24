@@ -8,6 +8,7 @@ import {BaZiDate} from "../BaZiDate";
 import {SetupPentagramLightMode} from "./SetupPentagramLightMode";
 import {Cycles} from "../Cycles";
 import moment from "moment";
+import {post} from "../../shared/api";
 
 export class DesktopLightMode extends Component {
     static displayName = DesktopLightMode.name;
@@ -217,14 +218,7 @@ export class DesktopLightMode extends Component {
             birthHour: birthHour,
             eventDate: eventDatePickerValue
         };
-        const url = `${process.env.REACT_APP_API_URL}/calculator`;
-        fetch(url, {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(input)
-        })
+        post("/calculator", input)
             .then(response => response.json())
             .then(data => this.setState({ model: data }));
     }

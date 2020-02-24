@@ -10,6 +10,7 @@ import { BigCircleCirculation } from "../components/BigCircleCirculation";
 import { Cycles } from "../components/Cycles";
 import { EnergyCircles } from "../components/EnergyCircles";
 import moment from "moment";
+import {post} from "../shared/api";
 
 export class Expert extends Component {
     static displayName = Expert.name;
@@ -142,14 +143,8 @@ export class Expert extends Component {
             receptionDate: receptionDatePickerValue,
             receptionHour: receptionHour
         };
-        const url = `${process.env.REACT_APP_API_URL}/calculator`;
-        fetch(url, {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(input)
-        })            
+
+        post("/calculator", input)
             .then(response => response.json())
             .then(data => this.setState({ model: data }));
     }

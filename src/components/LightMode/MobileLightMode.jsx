@@ -8,6 +8,7 @@ import Button from "@skbkontur/react-ui/Button";
 import toLocalDateString from "../../shared/formatDate";
 import {goTo} from "../../shared/goTo";
 import Toast from "@skbkontur/react-ui/components/Toast/Toast";
+import {post} from "../../shared/api";
 const { Calendar } = require('@skbkontur/react-icons');
 
 export class MobileLightMode extends Component {
@@ -101,14 +102,7 @@ export class MobileLightMode extends Component {
   async _handleBirthDateSelect(birthDate) {
     const birthDateString = toLocalDateString(birthDate);
     this.setState({ birthDateValue: birthDateString, isOpenBirthDate: false });
-      const url = `${process.env.REACT_APP_API_URL}/calculator/hours`;
-      fetch(url, {
-          method: "POST",
-          headers: {
-              "Content-Type": "application/json"
-          },
-          body: JSON.stringify(birthDateString)
-      })
+      post("/calculator/hours", birthDateString)
           .then(response => response.json())
           .then(data => this.setState({ model: data }));
   };
