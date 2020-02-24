@@ -27,18 +27,7 @@ export class NavMenu extends Component {
   }
 
   _signOut() {
-    const url = `${window.location.protocol}//${window.location.hostname}:5000/firebase/signout`;
-    fetch(url, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      }
-    })
-        .then(response => response.json())
-        .then(data => {
-          console.log(data);
-          goTo(PATH_SIGN_IN);
-        });
+    firebaseApp.auth().signOut().then(() => goTo(PATH_SIGN_IN));
   }
 
   componentDidMount() {

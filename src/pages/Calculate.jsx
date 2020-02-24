@@ -119,7 +119,7 @@ export class Calculate extends Component {
             birthHour: birthHour,
             eventDate: ed
         };
-        const url = `${window.location.protocol}//${window.location.hostname}:5000/calculator`;
+        const url = `${process.env.REACT_APP_API_URL}/calculator`;
         fetch(url, {
             method: "POST",
             headers: {

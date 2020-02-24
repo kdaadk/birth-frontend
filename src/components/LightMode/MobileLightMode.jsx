@@ -101,7 +101,7 @@ export class MobileLightMode extends Component {
   async _handleBirthDateSelect(birthDate) {
     const birthDateString = toLocalDateString(birthDate);
     this.setState({ birthDateValue: birthDateString, isOpenBirthDate: false });
-      const url = `${window.location.protocol}//${window.location.hostname}:5000/calculator/hours`;
+      const url = `${process.env.REACT_APP_API_URL}/calculator/hours`;
       fetch(url, {
           method: "POST",
           headers: {

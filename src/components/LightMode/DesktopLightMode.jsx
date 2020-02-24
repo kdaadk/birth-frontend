@@ -217,7 +217,7 @@ export class DesktopLightMode extends Component {
             birthHour: birthHour,
             eventDate: eventDatePickerValue
         };
-        const url = `${window.location.protocol}//${window.location.hostname}:5000/calculator`;
+        const url = `${process.env.REACT_APP_API_URL}/calculator`;
         fetch(url, {
             method: "POST",
             headers: {
