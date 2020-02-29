@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "../styles/Cycles.css";
+import moment from "moment";
 
 export class Cycles extends Component {
   render() {
@@ -95,8 +96,7 @@ function CycleElement(props) {
   }
 
   let start = new Date(period.start);
-  let end = new Date(period.end);
-  end.setTime(end.getTime() - 1);
+  let end = moment(period.end).subtract(1, 'days');
   const cycleElementClassName = isPeriodLast(period) ? "cycle-element last" : "cycle-element";
   
   return (
