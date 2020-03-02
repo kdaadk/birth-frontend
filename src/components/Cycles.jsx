@@ -96,7 +96,7 @@ function CycleElement(props) {
   }
 
   let start = new Date(period.start);
-  let end = moment(period.end).subtract(1, 'days');
+  let end = moment(period.end).subtract(1, 'days').toDate();
   const cycleElementClassName = isPeriodLast(period) ? "cycle-element last" : "cycle-element";
   
   return (
