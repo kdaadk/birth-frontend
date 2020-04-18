@@ -100,11 +100,11 @@ export class MobileLightMode extends Component {
   
   _handleEventDateSelect = (eventDate) => this.setState({ eventDateValue: toLocalDateString(eventDate), isOpenEventDate: false });
   async _handleBirthDateSelect(birthDate) {
-    const birthDateString = toLocalDateString(birthDate);
-    this.setState({ birthDateValue: birthDateString, isOpenBirthDate: false });
-      post("/calculator/hours", birthDateString)
+    const body = { birthDate: toLocalDateString(birthDate) };
+    this.setState({ birthDateValue: body.birthDate, isOpenBirthDate: false });
+      post("/calculator/hours", body)
           .then(response => response.json())
-          .then(data => this.setState({ model: data }));
+          .then(data => this.setState({ baZiBirthDateModel: data }));
   };
 }
 

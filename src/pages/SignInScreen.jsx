@@ -1,6 +1,8 @@
 import React from 'react';
 import { firebaseApp, SignIn} from '../shared/firebase'
 import Loader from "@skbkontur/react-ui/Loader";
+import {goTo} from "../shared/goTo";
+import {PATH_HOME} from "../shared/constants";
 
 class SignInScreen extends React.Component {
     constructor(props) {
@@ -32,7 +34,7 @@ class SignInScreen extends React.Component {
             );
         }
 
-        return <div/>;
+        return goTo(PATH_HOME);
     }
 }
 

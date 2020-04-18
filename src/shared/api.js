@@ -11,3 +11,12 @@ export function post(path, body) {
         body: JSON.stringify(body)
     });
 }
+
+export function get(path) {
+    return fetch(`${baseUrl}${path}`, {
+        method: "GET",
+        headers: {
+            "Content-Type": "application/json"
+        }
+    });
+}
