@@ -12,5 +12,3 @@ App has two modes:
 
 ExpertMode screen:
 ![BirthCalculator](https://github.com/kdaadk/birth-frontend/blob/master/src/images/screen-app.png?raw=true)
-
-State
